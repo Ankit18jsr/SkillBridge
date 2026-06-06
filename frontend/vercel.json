@@ -1,12 +1,12 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "package.json",
-      "use": "@vercel/vite"
+      "source": "/api/:path*",
+      "destination": "https://skillbridge-m9a3.onrender.com/api/:path*"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/" }
   ]
 }
