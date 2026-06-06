@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 font-sans antialiased selection:bg-primary-500 selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-900;
+  }
+}
+
+/* ==========================================
+   GLASSMORPHISM — Light frosted glass
+   ========================================== */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.glassmorphism-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* ==========================================
+   BUTTONS & INPUTS
+   ========================================== */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-7 py-3.5 font-semibold text-white rounded-xl bg-primary-600 transition-all duration-200;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary-700 -translate-y-0.5;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-7 py-3.5 font-semibold text-primary-700 rounded-xl border border-primary-200 bg-primary-50 transition-all duration-200;
+  }
+
+  .btn-outline:hover {
+    @apply bg-primary-100 border-primary-300 -translate-y-0.5;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
+  }
+
+  .input-light {
+    @apply w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400
+           focus:outline-none focus:border-primary-500 focus:ring-4 focus:ring-primary-500/15 transition-all;
+  }
+}
+
+/* ==========================================
+   BACKGROUNDS
+   ========================================== */
+.bg-grid-light {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ==========================================
+   SCROLLBAR
+   ========================================== */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
