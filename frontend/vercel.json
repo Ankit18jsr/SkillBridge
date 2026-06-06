@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://skillbridge-m9a3.onrender.com/api/:path*"
+      "destination": "https://skillbridge-elbo.onrender.com/api/:path*"
     },
     {
       "source": "/((?!api/).*)",
