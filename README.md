@@ -167,3 +167,11 @@ json
 
 📄 License
 This project is licensed under the ISC License.
+
+<img width="1535" height="753" alt="image" src="https://github.com/user-attachments/assets/b3b102f3-a282-4597-b8a8-3c8ed2e772ed" />
+<img width="1535" height="678" alt="image" src="https://github.com/user-attachments/assets/876ab9f1-de54-4df4-b120-177996ef3a4b" />
+<img width="1534" height="722" alt="image" src="https://github.com/user-attachments/assets/4072b701-86e2-45e7-87fc-2f6af96ec341" />
+
+
+
+
